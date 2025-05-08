@@ -50,12 +50,14 @@ html_theme_options = {
         "color-sidebar-link-text--top-level": "#a57b4a",
         "color-sidebar-item-background--hover": "#f0e6d6",
         "color-sidebar-item-background--current": "#e6d3b3",
+        "font-stack": "Avenir, Helvetica Neue, Helvetica, Arial, sans-serif",
     },
     "dark_css_variables": {
         "color-sidebar-link-text": "#d2b48c",
         "color-sidebar-link-text--top-level": "#d2b48c",
         "color-sidebar-item-background--hover": "#5c4033",
         "color-sidebar-item-background--current": "#4b3621",
+        "font-stack": "Avenir, Helvetica Neue, Helvetica, Arial, sans-serif",
     },
     "navigation_with_keys": True,
 }
