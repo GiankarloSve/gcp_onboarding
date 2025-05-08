@@ -45,8 +45,22 @@ exclude_patterns = []
 
 html_theme = 'furo'
 html_theme_options = {
+"light_css_variables": {
+        "color-sidebar-link-text": "#a57b4a",
+        "color-sidebar-link-text--top-level": "#a57b4a",
+        "color-sidebar-item-background--hover": "#f0e6d6",
+        "color-sidebar-item-background--current": "#e6d3b3",
+    },
+    "dark_css_variables": {
+        "color-sidebar-link-text": "#d2b48c",
+        "color-sidebar-link-text--top-level": "#d2b48c",
+        "color-sidebar-item-background--hover": "#5c4033",
+        "color-sidebar-item-background--current": "#4b3621",
+    },
     "navigation_with_keys": True,
 }
 
 
+
 html_static_path = ['_static']
+html_css_files = ['custom.css']

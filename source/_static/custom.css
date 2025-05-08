@@ -1,0 +1,14 @@
+h1, h2, h3 {
+    color: #a57b4a; /* Replace with your desired color */
+}
+.toc-title {
+    color: #a57b4a;
+}
+
+.toc-tree a {
+    color: #a57b4a;
+}
+
+.toc-tree a:hover {
+    color: #8b5e3c;
+}
