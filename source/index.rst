@@ -3,12 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-gcp_onboarding documentation
+Oz Risk Analysis Modeler
 ============================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+These instructions and API sample are an example of how Python, with its dunder command, and the ability to convert functions into visually mappable nodes can make complex algorithms, security for accessing various types of databases and the interceding of "what-if" scenarios scraping data lakes and data stores, simple for financial consultants and risk experts.
 
 
 .. toctree::

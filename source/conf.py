@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'gcp_onboarding'
+project = 'Oz Risk Analysis Modeler'
 copyright = '2025, A.Sverko & G.Sverko'
 author = 'A.Sverko & G.Sverko'
 release = '1.0'
