@@ -43,9 +43,9 @@ When done, click **Submit request**. You will be notified via email when it has 
 
 To install **Git**, there are a few additional steps because Git must pass BitBucket security, requiring the `.gitconfig` file to be set up. Specifically, you need to:
 
-1. [Install Git using the myTechnology website](#1-install-git-using-the-mytechnology-website)
-2. [Set up Basic Git Bash Properties](#2-set-up-basic-git-bash-properties)
-3. [Set Up Bitbucket SSO](#3-set-up-bitbucket-sso)
+1. [Install Git using the myTechnology website](#install-git-using-the-mytechnology-website)
+2. [Set up Basic Git Bash Properties](#set-up-basic-git-bash-properties)
+3. [Set Up Bitbucket SSO](#set-up-bitbucket-sso)
 
 Each will be explained below.
 
@@ -236,10 +236,10 @@ Once you complete this setup, you can create your Python virtual environment (ve
 
 Steps covered in this section:
 
-1. [Log in to Oz's Artifactory](#1-log-in-to-ozs-artifactory)
-2. [Choose Location and Prepare pip.ini File](#2-choose-location-and-prepare-pipini-file)
-3. [Generate Python Packager Key, Update pip.ini, and Activate venv](#3-generate-python-packager-key-update-pipini-and-activate-venv)
-4. [Troubleshooting Tips for this Section](#4-troubleshooting-tips-for-this-section)
+1. [Log in to Oz's Artifactory](#log-in-to-oz-s-artifactory)
+2. [Choose Location and Prepare pip.ini File](#choose-location-and-prepare-pip-ini-file)
+3. [Generate Python Packager Key, Update pip.ini, and Activate venv](#generate-python-packager-key-update-pip-ini-and-activate-venv)
+4. [Troubleshooting Tips for this Section](#troubleshooting-tips-for-this-section)
 
 #### 1. Log in to Oz's Artifactory
 
@@ -344,7 +344,7 @@ Other common `pip.ini` issues:
   ```bash
   echo $(realpath "pip.ini")
   ```
-  Then review the [previous instructions](#3-generate-python-packager-key-update-pipini-and-activate-venv).
+  Then review the [previous instructions](#generate-python-packager-key-update-pip-ini-and-activate-venv).
 - Your Standard ID was incorrectly entered into `pip.ini` (it must be in lowercase).
 - You forgot to replace all four instances of `$API_KEY` with your generated token.
 
@@ -373,10 +373,10 @@ This section walks you through:
 
 To run your first workflow successfully, complete the following high-level steps:
 
-1. [Prepare GCP and Install Test Environment](#1-prepare-gcp-and-install-test-environment)
-2. [Install GCP library by installing the GCP pip package](#2-install-gcp-library-by-installing-the-gcp-pip-package)
-3. [Write workflow](#3-write-workflow)
-4. [Test workflow](#4-test-workflow)
+1. [Prepare GCP and Install Test Environment](#prepare-gcp-and-install-test-environment)
+2. [Install GCP library by installing the GCP pip package](#install-gcp-library-by-installing-the-gcp-pip-package)
+3. [Write workflow](#write-workflow)
+4. [Test workflow](#test-workflow)
 
 #### 1. Prepare GCP and Install Test Environment
 
@@ -384,7 +384,7 @@ You should have already installed the recommended Python version that includes S
 
 Since you will be running GCP in a virtual environment (venv), you are not actually installing GCP. Instead, you will copy a folder from the GRA GCP repository that contains workflow examples. The final steps of this section will focus on setting up your `venv`.
 
-> **Important:** If you have not set up your SSH key to secure data traveling to and from Bitbucket repositories, complete [Set up Bitbucket SSO](#3-set-up-bitbucket-sso) first.
+> **Important:** If you have not set up your SSH key to secure data traveling to and from Bitbucket repositories, complete [Set up Bitbucket SSO](#set-up-bitbucket-sso) first.
 
 To prepare your GCP repository:
 
@@ -496,7 +496,7 @@ pip install -r build_requirements.txt
 
 > **Reference:** For background on how `venv` environments are created and updated, see the official [Python venv tutorial](https://docs.python.org/3/tutorial/venv.html).
 
-3. If the above installations were successful, you are ready to proceed to the next section: [Write Workflow](#3-write-workflow).
+3. If the above installations were successful, you are ready to proceed to the next section: [Write Workflow](#write-workflow).
 
 However, it is important to deactivate your virtual environment before switching to another project that uses a different repository.
 
@@ -672,12 +672,12 @@ In the next section, you will run a similar workflow called `hello_world_02.py`.
 
 In this section you will:
 
-- [Create a workflow that adds two numbers](#1-how-to-create-a-workflow-adding-two-numbers)
+- [Create a workflow that adds two numbers](#how-to-create-a-workflow-adding-two-numbers)
 - [Review key workflow configuration parameters](#key-workflow-configuration-parameters)
-- [Test several cases with a single test script](#2-experiment-with-assert-for-better-test-scripting)
-- [Concisely summarize the first two workflows](#3-concise-summary-of-first-two-workflows)
-- [Learn how to utilize GCP tasks to re-use and repurpose functions](#4-learn-how-to-utilize-gcp-tasks)
-- [Summarize how workflows and tasks work together](#5-summary-workflows-and-tasks)
+- [Test several cases with a single test script](#experiment-with-assert-for-better-test-scripting)
+- [Concisely summarize the first two workflows](#concise-summary-of-first-two-workflows)
+- [Learn how to utilize GCP tasks to re-use and repurpose functions](#learn-how-to-utilize-gcp-tasks)
+- [Summarize how workflows and tasks work together](#summary-workflows-and-tasks)
 
 ### 1. How to Create a Workflow Adding Two Numbers
 
@@ -725,7 +725,7 @@ def add_two_numbers(x, y):
     return x + y
 ```
 
-> **Hint:** You can later move this functionality into a separate task file. We will cover this in the next section: [Learn How to Utilize GCP Tasks](#4-learn-how-to-utilize-gcp-tasks).
+> **Hint:** You can later move this functionality into a separate task file. We will cover this in the next section: [Learn How to Utilize GCP Tasks](#learn-how-to-utilize-gcp-tasks).
 
 4. Construct the `hello_world_02` workflow using the `Workflow` class.
 
@@ -1212,7 +1212,7 @@ Zip Example:
 
 | Doc Version | Go Live Date | Approved by | Notes and Comments |
 |-------------|--------------|-------------|---------------------|
-| v.0.0.1     | 2025-03-01    | Adil Imam    | Initial draft, will later split into subdocuments |
-| v.1.0.0     | 2025-04-14    | Adil Imam    | Major revisions by Adriano Sverko, milestone release |
+| v.0.0.1     | 2025-03-01    |            | Initial draft, will later split into subdocuments |
+| v.1.0.0     | 2025-04-14    |              | Major revisions by Adriano Sverko, milestone release |
 | v.1.1.0     | _tk_          | _tk_         | _tk_ |
 | v.2.0.0     | _tk_          | _tk_         | _tk_ |
