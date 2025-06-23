@@ -21,7 +21,7 @@ If you are new to our bank, you may find these instructions too brief. Consult y
 1. [Getting the right software](#getting-the-right-software)
 2. [Installing Python and Git](#installing-python-and-git)
 3. [Getting the right permissions](#getting-the-right-permissions)
-4. [Setting up a development environment on your PC](#setting-up-a-development-environment-on-your-pc-artifactory)
+4. [Setting up a development environment on your PC](#setting-up-a-development-environment-on-your-pc)
 
 
 
@@ -44,8 +44,8 @@ When done, click **Submit request**. You will be notified via email when it has 
 To install **Git**, there are a few additional steps because Git must pass BitBucket security, requiring the `.gitconfig` file to be set up. Specifically, you need to:
 
 1. [Install Git using the myTechnology website](#1-install-git-using-the-mytechnology-website)
-2. [Set up basic Git Bash properties](#2-set-up-basic-git-bash-properties)
-3. [Set up BitBucket SSO](#3-set-up-bitbucket-sso)
+2. [Set up Basic Git Bash Properties](#2-set-up-basic-git-bash-properties)
+3. [Set Up Bitbucket SSO](#3-set-up-bitbucket-sso)
 
 Each will be explained below.
 
@@ -75,7 +75,7 @@ After you are notified that Git has been installed, follow these steps:
 > **Tip:** If a `.gitconfig` file does not exist, Git Bash will automatically create it when you run the edit command.
 
 
-#### Set Up Bitbucket SSO
+#### 3. Set Up Bitbucket SSO
 
 In this step, you will set up an *ed25519 key* and integrate it with your Bitbucket account. **ED25519** is equivalent to **RSA-3072** in that it provides 128-bit security, and it is commonly used in PGP and TLS. It is practical even for IoT solutions because it is fast and efficient on low-powered devices.
 
@@ -101,7 +101,7 @@ To set up Bitbucket:
 
     ![The result of running ls -al ~/.ssh is displayed](screenshots/setup_ed25519_01.png)
 
-    > **Tip:** If you already have `id_ed25519` and `id_ed25519.pub` but wish to generate a new key, delete these files and continue to the next step to create a new SSH key. If you believe Bitbucket is already set up and wish to test it, jump to [Step 7](#step-7) of this section.
+    > **Tip:** If you already have `id_ed25519` and `id_ed25519.pub` but wish to generate a new key, delete these files and continue to the next step to create a new SSH key. If you believe Bitbucket is already set up and wish to test it, jump to [Step 7](#test-ssh-bitbucket) of this section.
 
     If you cannot run the `ls` command, make sure it exists and is pathed correctly.  
     **Troubleshooting Examples:**
@@ -172,7 +172,7 @@ To set up Bitbucket:
     **Screenshot:** Viewing all Bitbucket keys  
     ![Viewing all Bitbucket keys](screenshots/setup_bitbucket_ssh_03_view_keys.png)
 
-
+<a name="test-ssh-bitbucket"></a>
 7. Test your SSH connection to Bitbucket.
 
     - Open **Git Bash** or your terminal.
@@ -675,7 +675,7 @@ In this section you will:
 - [Create a workflow that adds two numbers](#1-how-to-create-a-workflow-adding-two-numbers)
 - [Review key workflow configuration parameters](#key-workflow-configuration-parameters)
 - [Test several cases with a single test script](#2-experiment-with-assert-for-better-test-scripting)
-- [Concisely summarize the first two workflows](#3-concise-summary-first-two-workflows)
+- [Concisely summarize the first two workflows](#3-concise-summary-of-first-two-workflows)
 - [Learn how to utilize GCP tasks to re-use and repurpose functions](#4-learn-how-to-utilize-gcp-tasks)
 - [Summarize how workflows and tasks work together](#5-summary-workflows-and-tasks)
 
